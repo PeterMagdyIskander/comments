@@ -12,16 +12,12 @@
 }
 
 .form{
-  border: 2px solid;
+  
   display:flex;
   flex-direction: column;
-  flex: 1 1 auto;
-  border-color: red;
-  border-radius:25px;
+  justify-content:space-evenly;
   position: fixed;
-   left: 0;
    bottom: 0;
-   width: 100%;
 }
 
 
@@ -29,13 +25,25 @@
   border-radius: 25px;
   border: 2px solid;
   border-color: red;
-  width: 200px;
-  height: 150px;
+  width: 350px;
+  height: 75px;
   font-size: 14px;
+ 
 }
-
-.btn{
-  border-radius: 250px;
-  display: flex;
-  flex-direction: column;
+.btn, .text-area{
+  border-radius: 25px;
+  border: 2px solid;
+  border-color: red;
+  height: 20px;
+  text-align: center;
+}
+.text-area{
+  resize: none;
+  height: 25px;
+  margin: auto;
+  width: 75%;
+}
+.delete-btn{
+  margin-top: 5px;
+  margin-left: 71%;
 }
