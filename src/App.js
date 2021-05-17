@@ -2,68 +2,10 @@
 import './App.css';
 import { AiOutlineComment } from 'react-icons/ai';
 import React,{useState} from 'react';
+import CreatePost from './CreatePost'
+import Post from './Post';
 
 
-function CreatePost(props){
-  
-  const [data,setData]=useState({
-    title: "",
-    content: ""
-  });
-
-  function handleChange(event) {
-    const { name, value } = event.target;
-    setData((prevData) => {
-      return {
-        ...prevData,
-        [name]: value
-      };
-    });
-  }
-  function submitPost(event) {
-    props.onAdd(data);
-    setData({
-      title: "",
-      content: ""
-    });
-    event.preventDefault();
-  }
-  return(
-    <div>
-    <form>
-    <input
-        name="title"
-        onChange={handleChange}
-        value={data.title}
-        placeholder="Title"
-        />
-
-      <textarea
-        name="content"
-        onChange={handleChange}
-        value={data.content}
-        placeholder="Take a note..."
-      />
-      <button onClick={submitPost}></button>
-    </form>
-  </div> 
-  )
-}
-
-
-function Post(props){
-  function handleClick() {
-    props.onDelete(props.id);
-  }
-  return(
-    <div className="post">
-      <h1>{props.title}</h1>
-      <p>{props.content}</p>
-      <button onClick={handleClick}>
-      </button>
-    </div>
-  )
-}
 
 
 function App() {
@@ -83,7 +25,6 @@ function App() {
     });
   }
 
-  
   return (
     <div className="App">
     <CreatePost onAdd={addData} />
