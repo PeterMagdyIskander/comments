@@ -22,6 +22,7 @@ function CreatePost(props) {
     });
     event.preventDefault();
   }
+
   return (
     <div className="form">
       <textarea
@@ -31,7 +32,7 @@ function CreatePost(props) {
         placeholder="PogO Who asked"
         className="text-area"
       />
-      <button onClick={submitPost} className="submit-btn btn">Post</button>
+      <button onClick={submitPost} className="submit-btn">Post</button>
     </div>
   );
 }

@@ -6,7 +6,7 @@ function Post(props) {
   return (
     <div className="post">
       <p>{props.content}</p>
-      <button onClick={handleClick} className="delete-btn btn"> delete post</button>
+      <button onClick={handleClick} className="delete-btn"> delete post</button>
     </div>
   );
 }

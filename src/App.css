@@ -1,49 +1,39 @@
 
-.App {
+.post{
+  margin:1em;
+  border:2px solid red;
+  border-radius: 10px;
+  width:300px;
+  height: 100px;
+  font-size: 14px;
   text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: whitesmoke;
 }
+.delete-btn{
+  margin-top: 33px;
+  margin-left:217px;
+  width:82px;
+  color:white;
+  background-color: #282c34;
+  border-radius: 10px;
+  border:1px solid red;
+}
+
+
 
 .form{
-  
   display:flex;
   flex-direction: column;
-  justify-content:space-evenly;
   position: fixed;
    bottom: 0;
+   margin-left: 40%;
 }
 
-
-.post{
-  border-radius: 25px;
-  border: 2px solid;
-  border-color: red;
-  width: 350px;
-  height: 75px;
-  font-size: 14px;
- 
-}
-.btn, .text-area{
-  border-radius: 25px;
+.submit-btn, .text-area{
+  border-radius: 10px;
   border: 2px solid;
   border-color: red;
   height: 20px;
   text-align: center;
-}
-.text-area{
-  resize: none;
-  height: 25px;
-  margin: auto;
-  width: 75%;
-}
-.delete-btn{
-  margin-top: 5px;
-  margin-left: 71%;
+  margin: 2px;
 }
